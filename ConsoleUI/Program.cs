@@ -31,9 +31,13 @@ namespace ConsoleUI
                 new Car {CarId=5,BrandId=3,ColorId=4,CarName="Ferrari",
                     ModelYear=new DateTime(2017,1,1),DailyPrice=125000,Descriptions="Ferrari L"},
             };
-            carManager.Add(car1);
 
-            Console.Write("---------------");
+            for (int i = 0; i < cars.Count; i++)
+            {
+                //carManager.Add(cars[i]);
+            }
+
+            Console.Write("------(-_-)-------");
             foreach(var car in carManager.GetCarsByColorId(3))
             {
                 Console.WriteLine(car.Descriptions);
