@@ -10,3 +10,6 @@ D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProje
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\Entities\obj\Debug\net5.0\Entities.dll
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\Entities\obj\Debug\net5.0\ref\Entities.dll
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\Entities\obj\Debug\net5.0\Entities.pdb
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\Entities\bin\Debug\net5.0\Core.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\Entities\bin\Debug\net5.0\Core.pdb
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\Entities\obj\Debug\net5.0\Entities.csproj.CopyComplete

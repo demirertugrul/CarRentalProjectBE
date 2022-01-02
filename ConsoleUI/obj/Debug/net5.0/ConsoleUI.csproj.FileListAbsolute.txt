@@ -59,3 +59,5 @@ D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProje
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\ConsoleUI\obj\Debug\net5.0\ref\ConsoleUI.dll
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\ConsoleUI\obj\Debug\net5.0\ConsoleUI.pdb
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\ConsoleUI\obj\Debug\net5.0\ConsoleUI.genruntimeconfig.cache
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\ConsoleUI\bin\Debug\net5.0\Core.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\ConsoleUI\bin\Debug\net5.0\Core.pdb

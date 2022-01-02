@@ -15,3 +15,5 @@ D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProje
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\Business\obj\Debug\net5.0\Business.dll
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\Business\obj\Debug\net5.0\ref\Business.dll
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\Business\obj\Debug\net5.0\Business.pdb
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\Business\bin\Debug\net5.0\Core.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\Business\bin\Debug\net5.0\Core.pdb
