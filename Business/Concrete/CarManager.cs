@@ -26,7 +26,8 @@ namespace Business.Concrete
             }
             else
             {
-                throw new Exception("Araba ismi 2 karakterden ve fiyatı 0'dan fazla olmalıdır");
+                var ex = new Exception("Araba ismi 2 karakterden ve fiyatı 0'dan fazla olmalıdır");
+                Console.WriteLine(ex);            
             }
         }
 

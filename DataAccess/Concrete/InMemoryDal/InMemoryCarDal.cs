@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.InMemoryDal
 {
-    public class InMemoryCarDal : ICarDal
+    public class InMemoryCarDal : IinmemoryCarDal
     {
         List<Car> _cars;
 
@@ -41,12 +41,12 @@ namespace DataAccess.Concrete.InMemoryDal
 
         }
 
-        public Car Get(Expression<Func<Car, bool>> filter)
+        public Car GetById(int id)
         {
-            throw new NotImplementedException();
+            return _cars.SingleOrDefault(c => c.CarId == id);
         }
 
-        public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
+        public List<Car> GetAll()
         {
             return _cars;
         }
@@ -56,14 +56,15 @@ namespace DataAccess.Concrete.InMemoryDal
             return _cars.Where(c => c.CarId == Id).ToList();
         }
 
-        public List<Car> GetCarsByBrandId(Expression<Func<Car, bool>> filter)
+
+        public List<Car> GetCarsByBrandId(int id)
         {
-            throw new NotImplementedException();
+            return _cars.Where(c => c.BrandId == id).ToList();
         }
 
-        public List<Car> GetCarsByColorId(Expression<Func<Car, bool>> filter)
+        public List<Car> GetCarsByColorId(int id)
         {
-            throw new NotImplementedException();
+            return _cars.Where(c => c.ColorId == id).ToList();
         }
 
         public void Update(Car car)
@@ -72,6 +73,7 @@ namespace DataAccess.Concrete.InMemoryDal
             carToUpdate.CarId = car.CarId;
             carToUpdate.BrandId = car.BrandId;
             carToUpdate.ColorId = car.ColorId;
+            carToUpdate.CarName = car.CarName;
             carToUpdate.ModelYear = car.ModelYear;
             carToUpdate.DailyPrice = car.DailyPrice;
             carToUpdate.Descriptions = car.Descriptions;
