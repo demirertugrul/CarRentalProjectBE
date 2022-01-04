@@ -34,6 +34,7 @@ namespace ConsoleUI
             CarRentalManager carRentalManager = new CarRentalManager(new EfRentalDal());
             Rental rental = new Rental
             {
+                //Id-> auto inc
                 CarId = 1,
                 CostumerId = 1,
                 RentDate = new DateTime(2019,1,1),
