@@ -35,10 +35,9 @@ namespace ConsoleUI
             Rental rental = new Rental
             {
                 //Id-> auto inc
-                CarId = 1,
-                CostumerId = 1,
-                RentDate = new DateTime(2019,1,1),
-                ReturnDate = new DateTime(2022,1,1)
+                CarId =3,
+                CostumerId = 3,
+                RentDate = new DateTime(2019,1,1)
             };
             carRentalManager.Add(rental);
             foreach (var rent in carRentalManager.getRentalDetails().Data)
