@@ -27,6 +27,24 @@ namespace ConsoleUI
             //CarManagerTest();
             //ColorManagerTest();
             //BrandManagerTest();
+            CarRentalManagerTest();
+        }
+        private static void CarRentalManagerTest()
+        {
+            CarRentalManager carRentalManager = new CarRentalManager(new EfRentalDal());
+            Rental rental = new Rental
+            {
+                CarId = 1,
+                CostumerId = 1,
+                RentDate = new DateTime(2019,1,1),
+                ReturnDate = new DateTime(2022,1,1)
+            };
+            carRentalManager.Add(rental);
+            foreach (var rent in carRentalManager.getRentalDetails().Data)
+            {
+                Console.WriteLine("{0} / {1} / {2} / {3} / {4} / {5}", rent.CarId,rent.CostumerId,
+                    rent.CompanyName,rent.UserNameFirstName,rent.RentDate,rent.ReturnDate);
+            }
         }
 
         private static void BrandManagerTest()
@@ -54,10 +72,18 @@ namespace ConsoleUI
         private static void CarManagerTest()
         {
             CarManager carManager = new CarManager(new EfCarDal());
-
-            foreach (var car in carManager.GetCarDetails())
+            var getDetails = carManager.GetCarDetails();
+            if (getDetails.Success)
             {
-                Console.WriteLine("{0} / {1} / {2}", car.CarName, car.BrandName, car.ColorName);
+                Console.WriteLine(getDetails.Message);
+                foreach (var car in carManager.GetCarDetails().Data)
+                {
+                    Console.WriteLine("{0} / {1} / {2}", car.CarName, car.BrandName, car.ColorName);
+                }
+            }
+            else
+            {
+                Console.WriteLine(getDetails.Message);
             }
         }
     }
