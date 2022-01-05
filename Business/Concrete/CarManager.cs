@@ -47,18 +47,19 @@ namespace Business.Concrete
 
         public IDataResult<List<Car>> GetAll()
         {
+            //if (DateTime.Now.Hour == 21)
+            //{
+            //    return new ErrorDataResult<List<Car>>(Messages.ServerNotWorking);
+            //}
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.CarsAllListed);
         }
 
         public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
-            if (DateTime.Now.Hour==24) {
-                return new ErrorDataResult<List<CarDetailDto>>(Messages.ServerNotWorking);
-            }
-            else
-            {
-                return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(), Messages.CarDetailGot);
-            }
+            //if (DateTime.Now.Hour==24) {
+            //    return new ErrorDataResult<List<CarDetailDto>>(Messages.ServerNotWorking);
+            //}
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(), Messages.CarDetailGot);
         }
 
         public IDataResult<List<Car>> GetCarsByBrandId(int id)
@@ -74,7 +75,7 @@ namespace Business.Concrete
         public IResult Update(Car car)
         {
             _carDal.Update(car);
-            return new SuccessResult(Messages.CarUpdated);
+            return new SuccessResult(Messages.BrandUpdated);
         }
     }
 }

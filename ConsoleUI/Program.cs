@@ -35,7 +35,7 @@ namespace ConsoleUI
             Rental rental = new Rental
             {
                 //Id-> auto inc
-                CarId =3,
+                CarId = 3,
                 CostumerId = 3,
                 RentDate = new DateTime(2019,1,1)
             };

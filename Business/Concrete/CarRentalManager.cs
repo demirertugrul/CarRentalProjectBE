@@ -24,12 +24,12 @@ namespace Business.Concrete
         public IResult Add(Rental rental)
         {
             _rentalDal.Add(rental);
-            return new SuccessResult(Messages.CarAdded);
+            return new SuccessResult(Messages.RentalAdded);
         }
 
         public IDataResult<List<CarRentalDto>> getRentalDetails()
         {
-            return new SuccessDataResult<List<CarRentalDto>>(_rentalDal.GetAddedRental(),Messages.GetRental);
+            return new SuccessDataResult<List<CarRentalDto>>(_rentalDal.GetAddedRental(),Messages.GetRentals);
         }
     }
 }
