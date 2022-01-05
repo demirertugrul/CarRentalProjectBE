@@ -53,9 +53,9 @@ namespace ConsoleUI
             Brand brand = new Brand { BrandId = 5, BrandName = "MarsCar" };
             brandManager.Add(brand);
             var getById = brandManager.GetById(5);
-            Console.WriteLine(getById.BrandName);
+            Console.WriteLine(getById.Data);
             brandManager.Delete(brand);
-            foreach (var brands in brandManager.GetAll())
+            foreach (var brands in brandManager.GetAll().Data)
             {
                 Console.WriteLine(brands.BrandName);
             }
@@ -66,7 +66,7 @@ namespace ConsoleUI
             ColorManager colorManager = new ColorManager(new EfColorDal());
 
             var getById = colorManager.GetById(1);
-            Console.WriteLine(getById.ColorName);
+            Console.WriteLine(getById.Data);
         }
 
         private static void CarManagerTest()
