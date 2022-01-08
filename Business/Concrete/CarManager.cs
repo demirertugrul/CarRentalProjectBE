@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constrants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -21,17 +23,11 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
+        [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {
-            if(car.CarName.Length>=2 && car.DailyPrice > 0)
-            {
-                _carDal.Add(car);
-                return new SuccessResult(Messages.CarAdded);
-            }
-            else
-            {
-                return new ErrorResult(Messages.CarNotAdded);      
-            }
+            _carDal.Add(car);
+            return new SuccessResult(Messages.CarAdded);
         }
 
         public IResult Delete(Car car)
@@ -42,7 +38,7 @@ namespace Business.Concrete
 
         public IResult Get()
         {
-            return new SuccessDataResult<Car>(_carDal.Get(),Messages.CarListed);
+            return new SuccessDataResult<Car>(_carDal.Get(), Messages.CarListed);
         }
 
         public IDataResult<List<Car>> GetAll()
@@ -51,7 +47,7 @@ namespace Business.Concrete
             //{
             //    return new ErrorDataResult<List<Car>>(Messages.ServerNotWorking);
             //}
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.CarsAllListed);
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(), Messages.CarsAllListed);
         }
 
         public IDataResult<List<CarDetailDto>> GetCarDetails()

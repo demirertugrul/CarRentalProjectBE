@@ -1,4 +1,5 @@
-﻿using Entities.DTOs;
+﻿using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,5 +33,7 @@ namespace Business.Constrants
         public static string BrandsListed = "Tüm Markalar listelendi";
         public static string BrandDeleted = "Marka silindi";
         public static string BrandAdded = "Marka Eklendi";
+
+        public static string GTModelYear = "Araba Modeli 1886'dan büyük olmalıdır!";
     }
 }

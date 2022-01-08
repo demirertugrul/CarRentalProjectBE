@@ -61,3 +61,8 @@ D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProje
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\obj\Debug\net5.0\WebAPI.pdb
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\bin\Debug\net5.0\Autofac.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\bin\Debug\net5.0\Autofac.Extras.DynamicProxy.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\bin\Debug\net5.0\Castle.Core.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\bin\Debug\net5.0\FluentValidation.dll

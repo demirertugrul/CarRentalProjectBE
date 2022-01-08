@@ -21,15 +21,15 @@ namespace DataAccess.Concrete.EntityFramework
                 var addCarRent = from cars in context.Cars
                                     join rentals in context.Rentals
                                     on cars.CarId equals rentals.CarId
-                                    join costm in context.Costumers 
-                                    on rentals.CostumerId equals costm.CostumerId
+                                    join custm in context.Customers 
+                                    on rentals.CostumerId equals custm.CostumerId
                                     join users in context.Users
-                                    on costm.UserId equals users.Id
+                                    on custm.UserId equals users.Id
                                     select new CarRentalDto
                                     {
                                        CarId = cars.CarId,
-                                       CostumerId = costm.CostumerId,
-                                       CompanyName = costm.CompanyName,
+                                       CostumerId = custm.CostumerId,
+                                       CompanyName = custm.CompanyName,
                                        UserNameFirstName= users.FirstName,
                                        RentDate = rentals.RentDate,
                                        ReturnDate= rentals.ReturnDate
