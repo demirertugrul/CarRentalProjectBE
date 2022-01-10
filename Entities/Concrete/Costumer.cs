@@ -9,8 +9,8 @@ namespace Entities.Concrete
 {
     public class Costumer:IEntity
     {
+        public int CostumerId { get; set; }
         public int UserId { get; set; }
         public string CompanyName { get; set; }
-        public int CostumerId { get; set; }
     }
 }

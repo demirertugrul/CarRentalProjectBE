@@ -1,4 +1,5 @@
 ﻿using Business.Concrete;
+using Core.Utilities.Helpers.FileHelperFolder;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemoryDal;
 using Entities.Concrete;
@@ -27,7 +28,7 @@ namespace ConsoleUI
             //CarManagerTest();
             //ColorManagerTest();
             //BrandManagerTest();
-            CarRentalManagerTest();
+            //CarRentalManagerTest();
         }
         private static void CarRentalManagerTest()
         {
@@ -71,7 +72,7 @@ namespace ConsoleUI
 
         private static void CarManagerTest()
         {
-            CarManager carManager = new CarManager(new EfCarDal());
+            CarManager carManager = new CarManager(new EfCarDal(), new CarImageManager(new EfCarImageDal(),new FileHelperManager()));
             var getDetails = carManager.GetCarDetails();
             if (getDetails.Success)
             {

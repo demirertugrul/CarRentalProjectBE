@@ -1,4 +1,4 @@
-﻿using Business.Constrants;
+﻿using Business.Constants;
 using Entities.Concrete;
 using FluentValidation;
 using System;

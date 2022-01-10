@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.Constrants
+namespace Business.Constants
 {
     public static class Messages
     {
@@ -35,5 +35,14 @@ namespace Business.Constrants
         public static string BrandAdded = "Marka Eklendi";
 
         public static string GTModelYear = "Araba Modeli 1886'dan büyük olmalıdır!";
+
+        public static string ImageUploaded = "Resim başarıyla yüklendi";
+        public static string ImageDeleted = "Resim silindi";
+        public static string ImageUpdated = "Resim güncellendi";
+        public static string CarImageLimit = "En fazla 5 tane resim yükleyebilirsiniz";
+
+        public static string UserUpdated = "Kullanıcı güncellendi";
+        public static string UserDeleted = "Kullanıcı silindi";
+        public static string UserAdded = "Kullanıcı eklendi";
     }
 }

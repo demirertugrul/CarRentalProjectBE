@@ -1,5 +1,5 @@
 ﻿using Business.Abstract;
-using Business.Constrants;
+using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
@@ -17,10 +17,11 @@ namespace Business.Concrete
     public class CarManager : ICarService
     {
         ICarDal _carDal;
-
-        public CarManager(ICarDal carDal)
+        ICarImageService _carImageService;
+        public CarManager(ICarDal carDal, ICarImageService carImageService)
         {
             _carDal = carDal;
+            _carImageService = carImageService;
         }
 
         [ValidationAspect(typeof(CarValidator))]
@@ -57,6 +58,7 @@ namespace Business.Concrete
             //}
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(), Messages.CarDetailGot);
         }
+
 
         public IDataResult<List<Car>> GetCarsByBrandId(int id)
         {
