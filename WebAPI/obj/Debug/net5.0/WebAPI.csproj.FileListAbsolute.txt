@@ -69,3 +69,4 @@ D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProje
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\bin\Debug\net5.0\System.IO.Pipelines.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\ReCapProjectNEW\ReCapProject\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

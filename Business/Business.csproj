@@ -10,15 +10,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DependecyResolvers\CastleWinsdor\" />
-    <Folder Include="DependecyResolvers\StructureMap\" />
-    <Folder Include="DependecyResolvers\Ninject\" />
+    <Folder Include="DependencyResolvers\CastleWinsdor\" />
+    <Folder Include="DependencyResolvers\StructureMap\" />
+    <Folder Include="DependencyResolvers\Ninject\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="6.3.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
     <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.0" />
     <PackageReference Include="FluentValidation" Version="10.3.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
 </Project>

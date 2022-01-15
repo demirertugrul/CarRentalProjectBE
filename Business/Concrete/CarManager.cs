@@ -1,6 +1,10 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Performance;
+using Core.Aspects.Autofac.Transaction;
 using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -24,38 +28,49 @@ namespace Business.Concrete
             _carImageService = carImageService;
         }
 
+        [SecuredOperation("car.add,admin")]
         [ValidationAspect(typeof(CarValidator))]
+        [CacheRemoveAspect("ICarService.Get")]
+        [PerformanceAspect(5)]
         public IResult Add(Car car)
         {
             _carDal.Add(car);
             return new SuccessResult(Messages.CarAdded);
         }
 
+        //[TransactionScopeAspect]
+        //[PerformanceAspect(5)]
+        public IResult AddTransactionalTest(Car car)
+        {
+            throw new NotImplementedException();
+        }
+
+        [SecuredOperation("car.delete,admin")]
+        [CacheRemoveAspect("ICarService.Get")]
+        //[PerformanceAspect(5)]
         public IResult Delete(Car car)
         {
             _carDal.Delete(car);
             return new SuccessResult(Messages.CarDeleted);
         }
 
+        [ValidationAspect(typeof(CarValidator))]
+        [CacheAspect]
         public IResult Get()
         {
             return new SuccessDataResult<Car>(_carDal.Get(), Messages.CarListed);
         }
 
+        [CacheAspect]
+        [PerformanceAspect(5)]
         public IDataResult<List<Car>> GetAll()
         {
-            //if (DateTime.Now.Hour == 21)
-            //{
-            //    return new ErrorDataResult<List<Car>>(Messages.ServerNotWorking);
-            //}
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(), Messages.CarsAllListed);
         }
 
+        [CacheAspect]
         public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
-            //if (DateTime.Now.Hour==24) {
-            //    return new ErrorDataResult<List<CarDetailDto>>(Messages.ServerNotWorking);
-            //}
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(), Messages.CarDetailGot);
         }
 
@@ -70,6 +85,8 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Car>>(_carDal.GetCarsByColorId(c => c.ColorId == id));
         }
 
+        [CacheRemoveAspect("ICarService.Get")]
+        [PerformanceAspect(5)]
         public IResult Update(Car car)
         {
             _carDal.Update(car);

@@ -19,7 +19,6 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(c => c.DailyPrice).GreaterThanOrEqualTo(25000);
             RuleFor(c => c.ModelYear).NotEmpty();
             RuleFor(c => c.ModelYear).Must(GreaterThanNineteenthCentruies).WithMessage(Messages.GTModelYear);
-
         }
 
         private bool GreaterThanNineteenthCentruies(DateTime dateTime)
