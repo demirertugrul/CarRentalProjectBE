@@ -21,7 +21,7 @@ namespace DataAccess.Concrete.EntityFramework
                 var addCarRent = from cars in context.Cars
                                     join rentals in context.Rentals
                                     on cars.CarId equals rentals.CarId
-                                    join custm in context.Customers 
+                                    join custm in context.Costumers 
                                     on rentals.CostumerId equals custm.CostumerId
                                     join users in context.Users
                                     on custm.UserId equals users.Id
