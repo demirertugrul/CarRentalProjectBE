@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfUserDal:EntityFrameworkRepositoryBase<User,ReCapDbContext>,IUserDal
+    public class EfUserDal:EntityFrameworkRepositoryBase<User, CarDbContext>,IUserDal
     {
         public List<OperationClaim> GetClaims(User user)
         {
-            using (var context = new ReCapDbContext())
+            using (var context = new CarDbContext())
             {
                 var result = from operationClaim in context.OperationClaims
                              join userOperationClaim in context.UserOperationClaims

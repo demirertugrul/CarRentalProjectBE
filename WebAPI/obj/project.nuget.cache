@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eh0od1+DLAaAtr7a1BAG4NaIVHAkiU8khzBY0f+1njo3aAnSskk0Co/EvyhCCjij6KaTHKeSACmHuAXT6DTt0g==",
+  "dgSpecHash": "zg4LG8gBeapbdcrgDDGe7ifJMcgmH//Sx/gXlXlnL7gZvv+fymK3+2jBWoPTGXsebsmXd6052jq3wK9V+Y2hGg==",
   "success": true,
-  "projectFilePath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pries\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\pries\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

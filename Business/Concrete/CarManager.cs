@@ -55,20 +55,20 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(CarValidator))]
-        [CacheAspect]
+        //[CacheAspect]
         public IResult Get()
         {
             return new SuccessDataResult<Car>(_carDal.Get(), Messages.CarListed);
         }
 
-        [CacheAspect]
-        [PerformanceAspect(0)]
+        //[CacheAspect]
+        [PerformanceAspect(5)]
         public IDataResult<List<Car>> GetAll()
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(), Messages.CarsAllListed);
         }
 
-        [CacheAspect]
+        //[CacheAspect]
         public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(), Messages.CarDetailGot);

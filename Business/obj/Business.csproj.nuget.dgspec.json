@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Business\\Business.csproj": {}
+    "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Business\\Business.csproj": {}
   },
   "projects": {
-    "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Business\\Business.csproj": {
+    "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Business\\Business.csproj",
+        "projectUniqueName": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Business\\Business.csproj",
+        "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\pries\\.nuget\\packages\\",
-        "outputPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Business\\obj\\",
+        "outputPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pries\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\DataAccess\\DataAccess.csproj"
+              "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\DataAccess\\DataAccess.csproj"
               },
-              "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Entities\\Entities.csproj"
+              "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Entities\\Entities.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Core\\Core.csproj": {
+    "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Core\\Core.csproj",
+        "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\pries\\.nuget\\packages\\",
-        "outputPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Core\\obj\\",
+        "outputPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pries\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -175,14 +175,14 @@
         }
       }
     },
-    "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+    "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\DataAccess\\DataAccess.csproj",
+        "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\pries\\.nuget\\packages\\",
-        "outputPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\DataAccess\\obj\\",
+        "outputPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pries\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -199,11 +199,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Core\\Core.csproj": {
-                "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Core\\Core.csproj"
+              "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Core\\Core.csproj": {
+                "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Core\\Core.csproj"
               },
-              "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Entities\\Entities.csproj"
+              "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Entities\\Entities.csproj"
               }
             }
           }
@@ -242,14 +242,14 @@
         }
       }
     },
-    "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Entities\\Entities.csproj": {
+    "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Entities\\Entities.csproj",
+        "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\pries\\.nuget\\packages\\",
-        "outputPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Entities\\obj\\",
+        "outputPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pries\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -266,8 +266,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Core\\Core.csproj": {
-                "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\ReCapProjectNEW\\ReCapProject\\Core\\Core.csproj"
+              "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Core\\Core.csproj": {
+                "projectPath": "D:\\Lesson\\Tech_Projects\\Dev_Project\\c#\\MyFinalProject\\CarRentalProjectBE\\CarRentalProjectBE\\Core\\Core.csproj"
               }
             }
           }

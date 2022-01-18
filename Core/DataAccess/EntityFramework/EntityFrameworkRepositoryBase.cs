@@ -15,65 +15,65 @@ namespace Core.DataAccess.EntityFramework
     {
         public void Add(TEntity entity)
         {
-            using (TContext reCapDbContext = new TContext())
+            using (TContext context = new TContext())
             {
-                var addedToDb = reCapDbContext.Entry(entity);
+                var addedToDb = context.Entry(entity);
                 addedToDb.State = EntityState.Added;
-                reCapDbContext.SaveChanges();
+                context.SaveChanges();
             }
         }
 
         public void Delete(TEntity entity)
         {
-            using (TContext reCapDbContext = new TContext())
+            using (TContext context = new TContext())
             {
-                var deletedToDb = reCapDbContext.Entry(entity);
+                var deletedToDb = context.Entry(entity);
                 deletedToDb.State = EntityState.Deleted;
-                reCapDbContext.SaveChanges();
+                context.SaveChanges();
             }
         }
 
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
-            using (TContext reCapDbContext = new TContext())
+            using (TContext context = new TContext())
             {
-                return reCapDbContext.Set<TEntity>().SingleOrDefault(filter);
+                return context.Set<TEntity>().SingleOrDefault(filter);
             }
         }
 
         public List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
         {
-            using (TContext reCapDbContext = new TContext())
+            using (TContext context = new TContext())
             {
                 return filter == null
-                    ? reCapDbContext.Set<TEntity>().ToList()
-                    : reCapDbContext.Set<TEntity>().Where(filter).ToList();
+                    ? context.Set<TEntity>().ToList()
+                    : context.Set<TEntity>().Where(filter).ToList();
             }
         }
 
         public List<TEntity> GetCarsByBrandId(Expression<Func<TEntity, bool>> filter)
         {
-            using (TContext reCapDbContext = new TContext())
+            using (TContext context = new TContext())
             {
-                return reCapDbContext.Set<TEntity>().Where(filter).ToList();
+                return context.Set<TEntity>().Where(filter).ToList();
             }
         }
 
         public List<TEntity> GetCarsByColorId(Expression<Func<TEntity, bool>> filter)
         {
-            using (TContext reCapDbContext = new TContext())
+            using (TContext context = new TContext())
             {
-                return reCapDbContext.Set<TEntity>().Where(filter).ToList();
+                return context.Set<TEntity>().Where(filter).ToList();
             }
         }
 
         public void Update(TEntity entity)
         {
-            using (TContext reCapDbContext = new TContext())
+            using (TContext context = new TContext())
             {
-                var updatedToDb = reCapDbContext.Entry(entity);
+                var updatedToDb = context.Entry(entity);
                 updatedToDb.State = EntityState.Modified;
-                reCapDbContext.SaveChanges();
+                context.SaveChanges();
             }
         }
     }

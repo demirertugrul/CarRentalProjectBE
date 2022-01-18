@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfRentalDal : EntityFrameworkRepositoryBase<Rental, ReCapDbContext>, IRentalDal
+    public class EfRentalDal : EntityFrameworkRepositoryBase<Rental, CarDbContext>, IRentalDal
     {
 
         public List<CarRentalDto> GetAddedRental()
         {
-            using (ReCapDbContext context = new ReCapDbContext())
+            using (CarDbContext context = new CarDbContext())
             {
                 var addCarRent = from cars in context.Cars
                                     join rentals in context.Rentals
