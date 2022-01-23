@@ -25,14 +25,38 @@ namespace DataAccess.Concrete.EntityFramework
                                     on cars.BrandId equals brands.BrandId
                                     select new CarDetailDto
                                     {
-                                        CarName = cars.Descriptions,
+                                        CarId = cars.CarId,
+                                        CarName = cars.CarName,
+                                        BrandId = brands.BrandId,
                                         BrandName = brands.BrandName,
+                                        ColorId = colors.ColorId,
                                         ColorName = colors.ColorName,
-                                        DailyPrice = cars.DailyPrice
+                                        DailyPrice = cars.DailyPrice,
+                                        ModelYear = cars.ModelYear,
+                                        Descriptions = cars.Descriptions,
+                                        ImagePath = (from im in context.CarImages where im.CarId == cars.CarId select im.ImagePath).FirstOrDefault()
                                     };
 
                 return getCarDetails.ToList();
             }
+        }
+
+        public List<CarDetailDto> GetCarsByBrandIdWithDetails(int brandId)
+        {
+            var result = GetCarDetails().Where(b => b.BrandId == brandId);
+            return result.ToList();
+        }
+
+        public List<CarDetailDto> GetCarsByColorIdWithDetails(int colorId)
+        {
+            var result = GetCarDetails().Where(b => b.ColorId == colorId);
+            return result.ToList();
+        }
+
+        public List<CarDetailDto> GetCarDetailsByCarId(int carId)
+        {
+            var result = GetCarDetails().Where(c => c.CarId == carId);
+            return result.ToList();
         }
     }
 }

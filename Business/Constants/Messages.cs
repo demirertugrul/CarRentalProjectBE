@@ -54,5 +54,14 @@ namespace Business.Constants
         public static string SuccessfulLogin = "Giriş yapıldı";
         public static string AccessTokenCreated = "Token oluşturuldu";
         public static string UserAlreadyExists = "Kullanıcı mevcut";
+
+        public static string DeletedRental = "Kira Silindi";
+
+        public static string ListedRentals = "Kiralar Listelendi";
+
+        public static string GettedRental = "Kira Listelendi";
+
+        public static string ReturnOk = "Seçilen Kira Güncellendi";
+        public static string UpdatedRental = "Kira güncellendi";
     }
 }

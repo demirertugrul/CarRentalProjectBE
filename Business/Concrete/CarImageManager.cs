@@ -5,6 +5,7 @@ using Core.Utilities.Helpers.FileHelperFolder;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;

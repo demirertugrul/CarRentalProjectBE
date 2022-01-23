@@ -37,14 +37,14 @@ namespace ConsoleUI
             {
                 //Id-> auto inc
                 CarId = 3,
-                CostumerId = 3,
+                CustomerId = 3,
                 RentDate = new DateTime(2019,1,1)
             };
             carRentalManager.Add(rental);
-            foreach (var rent in carRentalManager.getRentalDetails().Data)
+            foreach (var rent in carRentalManager.GetRentalDetails().Data)
             {
-                Console.WriteLine("{0} / {1} / {2} / {3} / {4} / {5}", rent.CarId,rent.CostumerId,
-                    rent.CompanyName,rent.UserNameFirstName,rent.RentDate,rent.ReturnDate);
+                //Console.WriteLine("{0} / {1} / {2} / {3} / {4} / {5}", rent.CarId,rent.CostumerId,
+                //    rent.CompanyName,rent.UserNameFirstName,rent.RentDate,rent.ReturnDate);
             }
         }
 

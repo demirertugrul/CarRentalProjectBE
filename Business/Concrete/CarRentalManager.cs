@@ -30,9 +30,40 @@ namespace Business.Concrete
             return new SuccessResult(Messages.RentalAdded);
         }
 
-        public IDataResult<List<CarRentalDto>> getRentalDetails()
+        public IResult Delete(Rental rental)
         {
-            return new SuccessDataResult<List<CarRentalDto>>(_rentalDal.GetAddedRental(),Messages.GetRentals);
+            _rentalDal.Delete(rental);
+            return new SuccessResult(Messages.DeletedRental);
+        }
+
+        public IDataResult<List<Rental>> GetAll()
+        {
+            return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll(), Messages.ListedRentals);
+        }
+
+        public IDataResult<Rental> GetById(int rentalId)
+        {
+            return new SuccessDataResult<Rental>(_rentalDal.GetById(c => c.Id == rentalId), Messages.GettedRental);
+        }
+
+        public IDataResult<List<RentalDetailDto>> GetRentalDetails()
+        {
+            return new SuccessDataResult<List<RentalDetailDto>>(_rentalDal.GetRentalDetails());
+        }
+
+        public IResult SetReturnedById(int id)
+        {
+            DateTime now = DateTime.Now;
+            Rental updatedRental = _rentalDal.GetById(c => c.Id == id);
+            updatedRental.ReturnDate = now;
+            _rentalDal.Update(updatedRental);
+            return new SuccessResult(Messages.ReturnOk);
+        }
+
+        public IResult Update(Rental rental)
+        {
+            _rentalDal.Update(rental);
+            return new SuccessResult(Messages.UpdatedRental);
         }
     }
 }
