@@ -11,38 +11,38 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete
 {
-    public class CostumerManager : ICostumerService
+    public class CustomerManager : ICustomerService
     {
-        ICostumerDal _costumerDal;
+        ICustomerDal _costumerDal;
 
-        public CostumerManager(ICostumerDal costumerDal)
+        public CustomerManager(ICustomerDal costumerDal)
         {
             _costumerDal = costumerDal;
         }
 
-        public IResult Add(Costumer costumer)
+        public IResult Add(Customer costumer)
         {
             _costumerDal.Add(costumer);
             return new SuccessResult("Müşteri eklendi");
         }
 
-        public IResult Delete(Costumer costumer)
+        public IResult Delete(Customer costumer)
         {
             _costumerDal.Delete(costumer);
             return new SuccessResult("Müşteri silindi");
         }
 
-        public IDataResult<List<Costumer>> GetAll()
+        public IDataResult<List<Customer>> GetAll()
         {
-            return new SuccessDataResult<List<Costumer>>(_costumerDal.GetAll(), "Müşteriler listelendi");
+            return new SuccessDataResult<List<Customer>>(_costumerDal.GetAll(), "Müşteriler listelendi");
         }
 
-        public IDataResult<Costumer> GetById(int id)
+        public IDataResult<Customer> GetById(int id)
         {
-            return new SuccessDataResult<Costumer>(_costumerDal.Get(c=>c.CostumerId==id),"Müşteri listelendi");
+            return new SuccessDataResult<Customer>(_costumerDal.Get(c=>c.CustomerId==id),"Müşteri listelendi");
         }
 
-        public IResult Update(Costumer costumer)
+        public IResult Update(Customer costumer)
         {
             _costumerDal.Update(costumer);
             return new SuccessResult("Müşteri güncellendi");

@@ -11,18 +11,18 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CostumersController : ControllerBase
+    public class CustomersController : ControllerBase
     {
-        ICostumerService _costumerService;
-        public CostumersController(ICostumerService costumerService)
+        ICustomerService _customerService;
+        public CustomersController(ICustomerService customerService)
         {
-            _costumerService = costumerService;
+            _customerService = customerService;
         }
 
         [HttpGet("getall")]
         public IActionResult GetAll()
         {
-            var result = _costumerService.GetAll();
+            var result = _customerService.GetAll();
             if (result.Success)
             {
                 return Ok(result);
@@ -34,7 +34,7 @@ namespace WebAPI.Controllers
         [HttpGet("getbyid")]
         public IActionResult GetById(int id)
         {
-            var result = _costumerService.GetById(id);
+            var result = _customerService.GetById(id);
             if (result.Success)
             {
                 return Ok(result);
@@ -43,9 +43,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("add")]
-        public IActionResult Add(Costumer costumer)
+        public IActionResult Add(Customer costumer)
         {
-            var result = _costumerService.Add(costumer);
+            var result = _customerService.Add(costumer);
             if (result.Success)
             {
                 return Ok(result);
@@ -54,9 +54,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpDelete("delete")]
-        public IActionResult Delete(Costumer costumer)
+        public IActionResult Delete(Customer costumer)
         {
-            var result = _costumerService.Delete(costumer);
+            var result = _customerService.Delete(costumer);
             if (result.Success)
             {
                 return Ok(result);
@@ -65,9 +65,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("update")]
-        public IActionResult Update(Costumer costumer)
+        public IActionResult Update(Customer costumer)
         {
-            var result = _costumerService.Update(costumer);
+            var result = _customerService.Update(costumer);
             if (result.Success)
             {
                 return Ok(result);
