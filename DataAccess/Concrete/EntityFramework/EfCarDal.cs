@@ -58,5 +58,11 @@ namespace DataAccess.Concrete.EntityFramework
             var result = GetCarDetails().Where(c => c.CarId == carId);
             return result.ToList();
         }
+
+        public List<CarDetailDto> GetCarsByFilterWithDetails(int brandId, int colorId)
+        {
+            var result = GetCarDetails().Where(c => c.BrandId == brandId && c.ColorId == colorId);
+            return result.ToList();
+        }
     }
 }

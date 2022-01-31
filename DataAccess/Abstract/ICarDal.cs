@@ -15,5 +15,6 @@ namespace DataAccess.Abstract
         List<CarDetailDto> GetCarsByBrandIdWithDetails(int brandId);
         List<CarDetailDto> GetCarsByColorIdWithDetails(int colorId);
         List<CarDetailDto> GetCarDetailsByCarId(int carId);
+        List<CarDetailDto> GetCarsByFilterWithDetails(int brandId, int colorId);
     }
 }

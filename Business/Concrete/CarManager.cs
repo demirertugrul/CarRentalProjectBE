@@ -106,6 +106,11 @@ namespace Business.Concrete
 
         }
 
+        public IDataResult<List<CarDetailDto>> GetCarsByFilterWithDetails(int brandId, int colorId)
+        {
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarsByFilterWithDetails(brandId,colorId), Messages.CarsAllListed);
+        }
+
         [CacheRemoveAspect("ICarService.Get")]
         [PerformanceAspect(5)]
         public IResult Update(Car car)
