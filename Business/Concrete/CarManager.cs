@@ -70,7 +70,7 @@ namespace Business.Concrete
 
         public IDataResult<Car> GetById(int carId)
         {
-            return new SuccessDataResult<Car>(_carDal.GetById(c => c.CarId == carId));
+            return new SuccessDataResult<Car>(_carDal.GetById(c => c.Id == carId));
         }
 
         //[CacheAspect]

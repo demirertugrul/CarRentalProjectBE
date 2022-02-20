@@ -20,21 +20,21 @@ namespace DataAccess.Concrete.EntityFramework
             {
                 var getCarDetails = from cars in context.Cars
                                     join colors in context.Colors
-                                    on cars.ColorId equals colors.ColorId
+                                    on cars.ColorId equals colors.Id
                                     join brands in context.Brands
-                                    on cars.BrandId equals brands.BrandId
+                                    on cars.BrandId equals brands.Id
                                     select new CarDetailDto
                                     {
-                                        CarId = cars.CarId,
-                                        CarName = cars.CarName,
-                                        BrandId = brands.BrandId,
-                                        BrandName = brands.BrandName,
-                                        ColorId = colors.ColorId,
+                                        CarId = cars.Id,
+                                        CarName = cars.ModelName,
+                                        BrandId = brands.Id,
+                                        BrandName = brands.Name,
+                                        ColorId = colors.Id,
                                         ColorName = colors.ColorName,
                                         DailyPrice = cars.DailyPrice,
                                         ModelYear = cars.ModelYear,
                                         Descriptions = cars.Descriptions,
-                                        ImagePath = (from im in context.CarImages where im.CarId == cars.CarId select im.ImagePath).FirstOrDefault()
+                                        ImagePath = (from im in context.CarImages where im.CarId == cars.Id select im.ImagePath).FirstOrDefault()
                                     };
 
                 return getCarDetails.ToList();
@@ -63,6 +63,11 @@ namespace DataAccess.Concrete.EntityFramework
         {
             var result = GetCarDetails().Where(c => c.BrandId == brandId && c.ColorId == colorId);
             return result.ToList();
+        }
+
+        public List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto, bool>> filter = null)
+        {
+            throw new NotImplementedException();
         }
     }
 }

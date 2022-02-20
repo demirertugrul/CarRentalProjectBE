@@ -39,12 +39,12 @@ namespace Business.Concrete
 
         public IDataResult<Color> GetById(int id)
         {
-            return new SuccessDataResult<Color>(_colorDal.Get(c => c.ColorId == id),Messages.ColorsListed);
+            return new SuccessDataResult<Color>(_colorDal.Get(c => c.Id == id),Messages.ColorsListed);
         }
 
         public IDataResult<List<Color>> GetCarsByColorId(int id)
         {
-            return new SuccessDataResult<List<Color>>(_colorDal.GetCarsByColorId(c => c.ColorId == id),Messages.ColorsListed);
+            return new SuccessDataResult<List<Color>>(_colorDal.GetCarsByColorId(c => c.Id == id),Messages.ColorsListed);
         }
 
         public IResult Update(Color color)

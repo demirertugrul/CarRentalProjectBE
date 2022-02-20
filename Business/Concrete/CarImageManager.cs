@@ -50,7 +50,7 @@ namespace Business.Concrete
             return new SuccessResult(Messages.ImageUpdated);
         }
 
-        public IDataResult<List<CarImage>> GetByCarId(int carId)
+        public IDataResult<List<CarImage>> GetImagesByCarId(int carId)
         {
             var result = BusinessRules.Run(CheckCarImage(carId));
             if (result != null)
