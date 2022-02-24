@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Core.Entities.Concrete;
 using Entities.Concrete;
+using Entities.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -15,6 +16,7 @@ namespace WebAPI.Controllers
     public class UsersController : ControllerBase
     {
         IUserService _userService;
+
         public UsersController(IUserService userService)
         {
             _userService = userService;
@@ -31,11 +33,10 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-
-        [HttpGet("getbyid")]
-        public IActionResult GetById(int id)
+        [HttpPost("update")]
+        public IActionResult Update(UserUpdateDto userUpdateDto)
         {
-            var result = _userService.GetById(id);
+            var result = _userService.Update(userUpdateDto);
             if (result.Success)
             {
                 return Ok(result);
@@ -43,18 +44,7 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpPost("add")]
-        public IActionResult Add(User user)
-        {
-            var result = _userService.Add(user);
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
-        }
-
-        [HttpDelete("delete")]
+        [HttpPost("delete")]
         public IActionResult Delete(User user)
         {
             var result = _userService.Delete(user);
@@ -65,10 +55,32 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpPost("update")]
-        public IActionResult Update(User user)
+        [HttpGet("getuserbyuserid")]
+        public IActionResult GetUserByUserId(int userId)
         {
-            var result = _userService.Update(user);
+            var result = _userService.GetByUserId(userId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("getclaimsbyuserid")]
+        public IActionResult GetClaimsByUserId(int userId)
+        {
+            var result = _userService.GetClaimsByUserId(userId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("getuserdetailsbyemail")]
+        public IActionResult GetUserDetailsByEmail(string email)
+        {
+            var result = _userService.GetUserDetailsByEmail(email);
             if (result.Success)
             {
                 return Ok(result);

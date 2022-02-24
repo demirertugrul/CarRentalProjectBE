@@ -11,6 +11,6 @@ namespace Entities.Concrete
     {
         public int Id { get; set; }
         public int CustomerId { get; set; }
-        public short Score { get; set; }
+        public int Score { get; set; }
     }
 }

@@ -63,5 +63,24 @@ namespace Business.Constants
 
         public static string ReturnOk = "Seçilen Kira Güncellendi";
         public static string UpdatedRental = "Kira güncellendi";
+
+        public static string PaymentAdded = "Ödeme Tamamlandı.";
+
+        public static string LoginSuccessful = "Başarıyla giriş yapıldı.";
+        public static string PasswordIsUncorrect = "Parola yanlış.";
+        public static string TokenCreated = "Token oluşturuldu.";
+        public static string UserAlreadyRegistered = "Kullancı mevcut.";
+
+        public static string CreditCardUpdated = "Kerdi kartı güncellendi";
+        public static string CreditCardAdded = "Kredi kartı eklendi";
+        public static string CreditCardDeleted = "Kerdi kartı silindi.";
+
+        public static string FindeksAdded = "Findeks puanı eklendi";
+        public static string FindeksDeleted = "Findeks puanı silindi";
+        public static string FindeksUpdated = "Findeks puanı güncellendi";
+
+        public static string CarHired = "Araba kiralanmış";
+        public static string FindeksIsInsufficient = "Findeks puanı yetersiz";
+        public static string CarNotReturned = "Araba iade edilemedi";
     }
 }

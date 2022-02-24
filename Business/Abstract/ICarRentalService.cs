@@ -12,13 +12,12 @@ namespace Business.Abstract
     public interface ICarRentalService
     {
         IResult Add(Rental rental);
-        //IResult AddRentalWithDetails(RentalAddDto rental);
-        IResult Delete(Rental rental);
         IResult Update(Rental rental);
-        IResult SetReturnedById(int id);
+        IResult Delete(Rental rental);
         IDataResult<List<Rental>> GetAll();
-        IDataResult<Rental> GetById(int rentalId);
-        IDataResult<List<RentalDetailDto>> GetRentalDetails();
-        //public IDataResult<bool> IsRentable(int carId, DateTime rentDate, DateTime returnDate);
+        IDataResult<Rental> GetLastRentalByCarId(int carId);
+        IDataResult<List<Rental>> GetByCustomerId(int customerId);
+        IDataResult<List<RentalDetailDto>> GetRentalDetail();
+        IDataResult<Rental> GetById(int id);
     }
 }

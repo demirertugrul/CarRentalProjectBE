@@ -13,40 +13,40 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             //FrontEnd_Data
-            List<Car> cars = new List<Car> {
-                new Car {BrandId=1,ColorId=1,ModelName="Tesla",
-                    ModelYear=new DateTime(2022,1,1),DailyPrice=50000,Descriptions="Tesla S"},
-                new Car {BrandId=1,ColorId=2,ModelName="Tesla",
-                    ModelYear=new DateTime(2012,1,1),DailyPrice=150000,Descriptions="Tesla 3"},
-                new Car {BrandId=2,ColorId=1,ModelName="BMW",
-                    ModelYear=new DateTime(2020,1,1),DailyPrice=40000,Descriptions="BWM X"},
-                new Car {BrandId=4,ColorId=3,ModelName="Porsche",
-                    ModelYear=new DateTime(2015,1,1),DailyPrice=75000,Descriptions="Porsche A"},
-                new Car {BrandId=3,ColorId=4,ModelName="Ferrari",
-                    ModelYear=new DateTime(2017,1,1),DailyPrice=125000,Descriptions="Ferrari L"},
-            };
+            //List<Car> cars = new List<Car> {
+            //    new Car {BrandId=1,ColorId=1,ModelName="Tesla",
+            //        ModelYear=new DateTime(2022,1,1),DailyPrice=50000,Descriptions="Tesla S"},
+            //    new Car {BrandId=1,ColorId=2,ModelName="Tesla",
+            //        ModelYear=new DateTime(2012,1,1),DailyPrice=150000,Descriptions="Tesla 3"},
+            //    new Car {BrandId=2,ColorId=1,ModelName="BMW",
+            //        ModelYear=new DateTime(2020,1,1),DailyPrice=40000,Descriptions="BWM X"},
+            //    new Car {BrandId=4,ColorId=3,ModelName="Porsche",
+            //        ModelYear=new DateTime(2015,1,1),DailyPrice=75000,Descriptions="Porsche A"},
+            //    new Car {BrandId=3,ColorId=4,ModelName="Ferrari",
+            //        ModelYear=new DateTime(2017,1,1),DailyPrice=125000,Descriptions="Ferrari L"},
+            //};
             //CarManagerTest();
             //ColorManagerTest();
             //BrandManagerTest();
             //CarRentalManagerTest();
         }
-        private static void CarRentalManagerTest()
-        {
-            CarRentalManager carRentalManager = new CarRentalManager(new EfRentalDal());
-            Rental rental = new Rental
-            {
-                //Id-> auto inc
-                CarId = 3,
-                CustomerId = 3,
-                RentDate = new DateTime(2019,1,1)
-            };
-            carRentalManager.Add(rental);
-            foreach (var rent in carRentalManager.GetRentalDetails().Data)
-            {
-                //Console.WriteLine("{0} / {1} / {2} / {3} / {4} / {5}", rent.CarId,rent.CostumerId,
-                //    rent.CompanyName,rent.UserNameFirstName,rent.RentDate,rent.ReturnDate);
-            }
-        }
+        //private static void CarRentalManagerTest()
+        //{
+        //    CarRentalManager carRentalManager = new CarRentalManager(new EfRentalDal());
+        //    Rental rental = new Rental
+        //    {
+        //        //Id-> auto inc
+        //        CarId = 3,
+        //        CustomerId = 3,
+        //        RentDate = new DateTime(2019,1,1)
+        //    };
+        //    carRentalManager.Add(rental);
+        //    foreach (var rent in carRentalManager.GetRentalDetails().Data)
+        //    {
+        //        //Console.WriteLine("{0} / {1} / {2} / {3} / {4} / {5}", rent.CarId,rent.CostumerId,
+        //        //    rent.CompanyName,rent.UserNameFirstName,rent.RentDate,rent.ReturnDate);
+        //    }
+        //}
 
         private static void BrandManagerTest()
         {
@@ -72,20 +72,20 @@ namespace ConsoleUI
 
         private static void CarManagerTest()
         {
-            CarManager carManager = new CarManager(new EfCarDal(), new CarImageManager(new EfCarImageDal(),new FileHelperManager()));
-            var getDetails = carManager.GetCarDetails();
-            if (getDetails.Success)
-            {
-                Console.WriteLine(getDetails.Message);
-                foreach (var car in carManager.GetCarDetails().Data)
-                {
-                    Console.WriteLine("{0} / {1} / {2}", car.CarName, car.BrandName, car.ColorName);
-                }
-            }
-            else
-            {
-                Console.WriteLine(getDetails.Message);
-            }
+            //CarManager carManager = new CarManager(new EfCarDal(), new CarImageManager(new EfCarImageDal(),new FileHelperManager()));
+            //var getDetails = carManager.GetCarDetails();
+            //if (getDetails.Success)
+            //{
+            //    Console.WriteLine(getDetails.Message);
+            //    foreach (var car in carManager.GetCarDetails().Data)
+            //    {
+            //        Console.WriteLine("{0} / {1} / {2}", car.CarName, car.BrandName, car.ColorName);
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine(getDetails.Message);
+            //}
         }
     }
 }

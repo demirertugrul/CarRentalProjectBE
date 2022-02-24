@@ -15,7 +15,7 @@ namespace Entities.Concrete
         public string ModelName { get; set; }
         public DateTime ModelYear { get; set; }
         public decimal DailyPrice { get; set; }
+        public int MinFindeksScore { get; set; }
         public string Descriptions { get; set; }
-        public short? MinFindeksScore { get; set; }
     }
 }

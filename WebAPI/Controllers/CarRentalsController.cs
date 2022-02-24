@@ -21,19 +21,6 @@ namespace WebAPI.Controllers
             _carRentalService = carRentalService;
         }
 
-        [HttpGet("getrentaldetails")]
-        public IActionResult GetRentalDetails()
-        {
-            var result = _carRentalService.GetRentalDetails();
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
-        }
-
-
-
         [HttpPost("add")]
         public IActionResult Add(Rental rental)
         {
@@ -45,5 +32,72 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
+        [HttpPost("delete")]
+        public IActionResult Delete(Rental rental)
+        {
+            var result = _carRentalService.Delete(rental);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpPost("update")]
+        public IActionResult Update(Rental rental)
+        {
+            var result = _carRentalService.Update(rental);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("getbyid")]
+        public IActionResult GetById(int id)
+        {
+            var result = _carRentalService.GetById(id);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("getall")]
+        public IActionResult GetAll()
+        {
+            var result = _carRentalService.GetAll();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("getrentaldetail")]
+        public IActionResult GetRentalDetail()
+        {
+            var result = _carRentalService.GetRentalDetail();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("getlastrentalbycarid")]
+        public IActionResult GetLastRentalByCarId(int carId)
+        {
+            var result = _carRentalService.GetLastRentalByCarId(carId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
     }
+
 }
+

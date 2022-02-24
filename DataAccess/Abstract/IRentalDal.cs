@@ -11,7 +11,6 @@ namespace DataAccess.Abstract
 {
     public interface IRentalDal:IEntityRepository<Rental>
     {
-        List<Rental> GetCarIdAndReturnDate(int carId, DateTime? returnDate);
         List<RentalDetailDto> GetRentalDetails();
     }
 }

@@ -1,9 +1,11 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Core.Aspects.Autofac.Validation;
 using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,20 +17,21 @@ namespace Business.Concrete
     public class UserManager : IUserService
     {
         IUserDal _userDal;
+
         public UserManager(IUserDal userDal)
         {
             _userDal = userDal;
         }
-        public IResult Add(User user)
+
+        public void Add(User user)
         {
             _userDal.Add(user);
-            return new SuccessResult(Messages.UserAdded);
         }
 
         public IResult Delete(User user)
         {
             _userDal.Delete(user);
-            return new SuccessResult(Messages.UserDeleted);
+            return new SuccessResult();
         }
 
         public IDataResult<List<User>> GetAll()
@@ -36,25 +39,41 @@ namespace Business.Concrete
             return new SuccessDataResult<List<User>>(_userDal.GetAll());
         }
 
-        public IDataResult<User> GetById(int id)
-        {
-            return new SuccessDataResult<User>(_userDal.Get(u => u.Id == id));
-        }
-
-        public IDataResult<User> GetByMail(string email)
+        public IDataResult<User> GetByEmail(string email)
         {
             return new SuccessDataResult<User>(_userDal.Get(u => u.Email == email));
         }
 
-        public IDataResult<List<OperationClaim>> GetClaims(User user)
+        public IDataResult<User> GetByUserId(int id)
         {
-            return new SuccessDataResult<List<OperationClaim>>(_userDal.GetClaims(user)); 
+            return new SuccessDataResult<User>(_userDal.Get(u => u.Id == id));
         }
 
-        public IResult Update(User user)
+        public IDataResult<List<OperationClaim>> GetClaims(User user)
         {
-            _userDal.Update(user);
-            return new SuccessResult(Messages.UserUpdated);
+            return new SuccessDataResult<List<OperationClaim>>(_userDal.GetClaims(user));
         }
+
+        public IDataResult<List<OperationClaim>> GetClaimsByUserId(int userId)
+        {
+            User user = _userDal.Get(u => u.Id == userId);
+            return new SuccessDataResult<List<OperationClaim>>(_userDal.GetClaims(user));
+        }
+
+        public IDataResult<UserDetailDto> GetUserDetailsByEmail(string email)
+        {
+            return new SuccessDataResult<UserDetailDto>(_userDal.GetUserDetailsByEmail(email));
+        }
+
+        public IResult Update(UserUpdateDto userUpdateDto)
+        {
+            var userForUpdate = GetByUserId(userUpdateDto.Id).Data;
+            userForUpdate.FirstName = userUpdateDto.FirstName;
+            userForUpdate.LastName = userUpdateDto.LastName;
+            userForUpdate.Email = userUpdateDto.Email;
+            _userDal.Update(userForUpdate);
+            return new SuccessResult();
+        }
+
     }
 }

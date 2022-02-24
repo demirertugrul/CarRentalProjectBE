@@ -25,7 +25,7 @@ namespace DataAccess.Concrete.EntityFramework
                                     on cars.BrandId equals brands.Id
                                     select new CarDetailDto
                                     {
-                                        CarId = cars.Id,
+                                        Id = cars.Id,
                                         CarName = cars.ModelName,
                                         BrandId = brands.Id,
                                         BrandName = brands.Name,
@@ -34,7 +34,7 @@ namespace DataAccess.Concrete.EntityFramework
                                         DailyPrice = cars.DailyPrice,
                                         ModelYear = cars.ModelYear,
                                         Descriptions = cars.Descriptions,
-                                        ImagePath = (from im in context.CarImages where im.CarId == cars.Id select im.ImagePath).FirstOrDefault()
+                                        MinFindeksScore = cars.MinFindeksScore,
                                     };
 
                 return getCarDetails.ToList();
@@ -55,7 +55,7 @@ namespace DataAccess.Concrete.EntityFramework
 
         public List<CarDetailDto> GetCarDetailsByCarId(int carId)
         {
-            var result = GetCarDetails().Where(c => c.CarId == carId);
+            var result = GetCarDetails().Where(c => c.Id == carId);
             return result.ToList();
         }
 
@@ -63,11 +63,6 @@ namespace DataAccess.Concrete.EntityFramework
         {
             var result = GetCarDetails().Where(c => c.BrandId == brandId && c.ColorId == colorId);
             return result.ToList();
-        }
-
-        public List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto, bool>> filter = null)
-        {
-            throw new NotImplementedException();
         }
     }
 }
