@@ -11,11 +11,12 @@ namespace Entities.Concrete
     {
         public int Id { get; set; }
         public int CustomerId { get; set; }
-        public string NameSurname { get; set; }
+        public string FullName { get; set; }
         public string CardNumber { get; set; }
-        public byte ExpMonth { get; set; }
-        public byte ExpYear { get; set; }
-        public string Cvc { get; set; }
+        public int CardExpMonth { get; set; }
+        public int CardExpYear { get; set; }
+        public int Cvv { get; set; }
         public string CardType { get; set; }
+        public int CardLimit { get; set; }
     }
 }
