@@ -82,5 +82,7 @@ namespace Business.Constants
         public static string CarHired = "Araba kiralanmış";
         public static string FindeksIsInsufficient = "Findeks puanı yetersiz";
         public static string CarNotReturned = "Araba iade edilemedi";
+
+        public static string CarUpdated = "Araba güncellendi";
     }
 }

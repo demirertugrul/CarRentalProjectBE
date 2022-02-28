@@ -114,7 +114,7 @@ namespace Business.Concrete
         public IResult Update(Car car)
         {
             _carDal.Update(car);
-            return new SuccessResult(Messages.BrandUpdated);
+            return new SuccessResult(Messages.CarUpdated);
         }
     }
 }
