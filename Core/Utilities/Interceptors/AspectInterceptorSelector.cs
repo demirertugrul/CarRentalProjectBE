@@ -15,7 +15,7 @@ namespace Core.Utilities.Interceptors
             var methodAttributes = type.GetMethod(method.Name)
                 .GetCustomAttributes<MethodInterceptionBaseAttribute>(true);
             classAttributes.AddRange(methodAttributes);
-            //classAttributes.Add(new PerformanceAspect(0)); mail gondermek icin 0 yaptim.
+            //classAttributes.Add(new PerformanceAspect(0)); 
             return classAttributes.OrderBy(x => x.Priority).ToArray();
         }
     }

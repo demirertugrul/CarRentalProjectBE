@@ -12,77 +12,71 @@ namespace Business.Constants
 {
     public static class Messages
     {
-        public static string CarAdded = "Yeni Araba Eklendi";
-        public static string CarNotAdded = "Araba ismi 2 karakterden uzun olmalıdır ve fiyatı 0 dan büyük olmalıdır";
-        public static string CarDeleted = "Araba Silindi";
-        public static string CarListed = "Seçilen Araba Listelendi";
-        public static string CarsAllListed = "Arabalar Listelendi";
-        public static string CarDetailGot = "Araba Detayları Listelendi";
-        public static string BrandUpdated = "Araba güncellendi";
+        public static string CarAdded = "New Car Added.";
+        public static string CarNotAdded = "Car name must be longer than 2 characters and price must be greater than 0.";
+        public static string CarDeleted = "Car Deleted.";
+        public static string CarListed = "Selected Car Listed.";
+        public static string CarsAllListed = "Cars Listed.";
+        public static string CarDetailGot = "Car Details Listed.";
+        public static string CarUpdated = "The car has been updated.";
+        public static string CarHired = "You rented the Car.";
+        public static string CarNotReturned = "The car could not be returned.";
 
-        public static string ServerNotWorking = "Server Bakımda..";
+        public static string ServerNotWorking = "Server is in maintenance..";
 
-        public static string ColorUpdate = "Renk güncellendi";
-        public static string ColorDeleted = "Renk silindi";
-        public static string ColorAdded = "Renk eklendi";
-        public static string ColorsListed = "Renkler Listelendi";
+        public static string ColorUpdate = "Color updated.";
+        public static string ColorDeleted = "Color removed.";
+        public static string ColorAdded = "Color added.";
+        public static string ColorsListed = "Colors Listed.";
 
-        public static string RentalAdded = "Yeni Araba Kira eklendi";
-        public static string GetRentals = "Kiralanan arabalar listelendi";
+        public static string RentalAdded = "New Car Rental added.";
+        public static string GetRentals = "Rented vehicles listed.";
+        public static string DeletedRental = "Rent Deleted.";
+        public static string ListedRentals = "Rents Listed.";
+        public static string GettedRental = "Rent Listed.";
+        public static string ReturnOk = "Selected Rent Updated.";
 
-        public static string BrandIdsListed = "İstenilen id'ye sahip markalar listelendi";
-        public static string BrandListed = "İstenilen id'ye sahip marka listelendi";
-        public static string BrandsListed = "Tüm Markalar listelendi";
-        public static string BrandDeleted = "Marka silindi";
-        public static string BrandAdded = "Marka Eklendi";
+        public static string BrandIdsListed = "The brands with the desired id are listed.";
+        public static string BrandListed = "The brand with the desired id is listed.";
+        public static string BrandsListed = "All Brands listed.";
+        public static string BrandDeleted = "Brand deleted.";
+        public static string BrandAdded = "Brand Added.";
+        public static string BrandUpdated = "The car has been updated.";
 
-        public static string GTModelYear = "Araba Modeli 1886'dan büyük olmalıdır!";
+        public static string GTModelYear = "Car Model must be greater than 1886!";
 
-        public static string ImageUploaded = "Resim başarıyla yüklendi";
-        public static string ImageDeleted = "Resim silindi";
-        public static string ImageUpdated = "Resim güncellendi";
-        public static string CarImageLimit = "En fazla 5 tane resim yükleyebilirsiniz";
+        public static string ImageUploaded = "Image uploaded successfully.";
+        public static string ImageDeleted = "Image deleted.";
+        public static string ImageUpdated = "Image updated.";
+        public static string CarImageLimit = "You can upload maximum 5 image.";
 
-        public static string UserUpdated = "Kullanıcı güncellendi";
-        public static string UserDeleted = "Kullanıcı silindi";
-        public static string UserAdded = "Kullanıcı eklendi";
-        public static string AuthorizationDenied = "Yetkiniz yok!";
+        public static string UserUpdated = "User updated.";
+        public static string UserDeleted = "User deleted.";
+        public static string UserAdded = "User added.";
+        public static string UserNotFound = "User not found!.";
+        public static string UserRegistered = "User registered.";
 
-        public static string UserNotFound = "Kullanıcı bulunamadı";
-        public static string UserRegistered = "Kayıt olundu";
         public static string PasswordError = "Parola hatası";
-        public static string SuccessfulLogin = "Giriş yapıldı";
-        public static string AccessTokenCreated = "Token oluşturuldu";
-        public static string UserAlreadyExists = "Kullanıcı mevcut";
+        public static string SuccessfulLogin = "Login succesful!.";
+        public static string AuthorizationDenied = "Authorization Denied!.";
+        public static string AccessTokenCreated = "Token created!";
+        public static string UserAlreadyExists = "User is already exists!.";
+        public static string UserAlreadyRegistered = "User is already registered!.";
+        public static string TokenCreated = "Token Created!.";
+        public static string PasswordIsUncorrect = "Password is incorrect!.";
+        public static string LoginSuccessful = "Login Successful.";
 
-        public static string DeletedRental = "Kira Silindi";
+        public static string PaymentAdded = "Payment succesful!.";
 
-        public static string ListedRentals = "Kiralar Listelendi";
+        public static string CreditCardUpdated = "Credit Card updated.";
+        public static string CreditCardAdded = "Credit Card added.";
+        public static string CreditCardDeleted = "Credit Card deleted.";
 
-        public static string GettedRental = "Kira Listelendi";
+        public static string FindeksAdded = "Findeks point added.";
+        public static string FindeksDeleted = "Findeks point deleted.";
+        public static string FindeksUpdated = "Findeks point updated.";
+        public static string FindeksIsInsufficient = "Findeks point not enough!.";
 
-        public static string ReturnOk = "Seçilen Kira Güncellendi";
-        public static string UpdatedRental = "Kira güncellendi";
 
-        public static string PaymentAdded = "Ödeme Tamamlandı.";
-
-        public static string LoginSuccessful = "Başarıyla giriş yapıldı.";
-        public static string PasswordIsUncorrect = "Parola yanlış.";
-        public static string TokenCreated = "Token oluşturuldu.";
-        public static string UserAlreadyRegistered = "Kullancı mevcut.";
-
-        public static string CreditCardUpdated = "Kerdi kartı güncellendi";
-        public static string CreditCardAdded = "Kredi kartı eklendi";
-        public static string CreditCardDeleted = "Kerdi kartı silindi.";
-
-        public static string FindeksAdded = "Findeks puanı eklendi";
-        public static string FindeksDeleted = "Findeks puanı silindi";
-        public static string FindeksUpdated = "Findeks puanı güncellendi";
-
-        public static string CarHired = "Araba kiralanmış";
-        public static string FindeksIsInsufficient = "Findeks puanı yetersiz";
-        public static string CarNotReturned = "Araba iade edilemedi";
-
-        public static string CarUpdated = "Araba güncellendi";
     }
 }
