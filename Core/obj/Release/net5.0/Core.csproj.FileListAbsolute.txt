@@ -1,0 +1,12 @@
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\bin\Release\net5.0\Core.deps.json
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\bin\Release\net5.0\Core.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\bin\Release\net5.0\ref\Core.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\bin\Release\net5.0\Core.pdb
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\obj\Release\net5.0\Core.csproj.AssemblyReference.cache
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\obj\Release\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\obj\Release\net5.0\Core.AssemblyInfoInputs.cache
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\obj\Release\net5.0\Core.AssemblyInfo.cs
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\obj\Release\net5.0\Core.csproj.CoreCompileInputs.cache
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\obj\Release\net5.0\Core.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\obj\Release\net5.0\ref\Core.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\Core\obj\Release\net5.0\Core.pdb

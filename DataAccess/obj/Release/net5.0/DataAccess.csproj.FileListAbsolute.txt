@@ -1,0 +1,17 @@
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\bin\Release\net5.0\DataAccess.deps.json
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\bin\Release\net5.0\DataAccess.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\bin\Release\net5.0\ref\DataAccess.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\bin\Release\net5.0\DataAccess.pdb
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\bin\Release\net5.0\Core.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\bin\Release\net5.0\Entities.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\bin\Release\net5.0\Core.pdb
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\bin\Release\net5.0\Entities.pdb
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\obj\Release\net5.0\DataAccess.csproj.AssemblyReference.cache
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\obj\Release\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\obj\Release\net5.0\DataAccess.AssemblyInfoInputs.cache
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\obj\Release\net5.0\DataAccess.AssemblyInfo.cs
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\obj\Release\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\obj\Release\net5.0\DataAccess.csproj.CopyComplete
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\obj\Release\net5.0\DataAccess.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\obj\Release\net5.0\ref\DataAccess.dll
+D:\Lesson\Tech_Projects\Dev_Project\c#\MyFinalProject\CarRentalProjectBE\CarRentalProjectBE\DataAccess\obj\Release\net5.0\DataAccess.pdb
